@@ -5,6 +5,7 @@ export interface Person {
   email: string;
   role: 'employee' | 'manager';
   managerId?: string;
+  photo?: string;
 }
 
 export type PersonFormData = Omit<Person, 'id'>;

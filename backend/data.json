@@ -1,15 +1,15 @@
 {
   "people": [
-    { "id": "1", "firstName": "Sarah", "lastName": "Cohen", "email": "sarah.cohen@company.com", "role": "manager" },
-    { "id": "2", "firstName": "David", "lastName": "Levy", "email": "david.levy@company.com", "role": "manager" },
-    { "id": "3", "firstName": "Maya", "lastName": "Shapiro", "email": "maya.shapiro@company.com", "role": "manager" },
-    { "id": "4", "firstName": "Tom", "lastName": "Katz", "email": "tom.katz@company.com", "role": "employee", "managerId": "1" },
-    { "id": "5", "firstName": "Noa", "lastName": "Ben-David", "email": "noa.bendavid@company.com", "role": "employee", "managerId": "1" },
-    { "id": "6", "firstName": "Avi", "lastName": "Mizrahi", "email": "avi.mizrahi@company.com", "role": "employee", "managerId": "1" },
-    { "id": "7", "firstName": "Lior", "lastName": "Green", "email": "lior.green@company.com", "role": "employee", "managerId": "2" },
-    { "id": "8", "firstName": "Dana", "lastName": "Friedman", "email": "dana.friedman@company.com", "role": "employee", "managerId": "2" },
-    { "id": "9", "firstName": "Yael", "lastName": "Stern", "email": "yael.stern@company.com", "role": "employee", "managerId": "3" },
-    { "id": "10", "firstName": "Ron", "lastName": "Avraham", "email": "ron.avraham@company.com", "role": "employee", "managerId": "3" },
-    { "id": "11", "firstName": "Gal", "lastName": "Peretz", "email": "gal.peretz@company.com", "role": "employee", "managerId": "3" }
+    { "id": "1", "firstName": "Sarah", "lastName": "Cohen", "email": "sarah.cohen@company.com", "role": "manager", "photo": "https://i.pravatar.cc/40?img=10" },
+    { "id": "2", "firstName": "David", "lastName": "Levy", "email": "david.levy@company.com", "role": "manager", "photo": "https://i.pravatar.cc/40?img=3" },
+    { "id": "3", "firstName": "Maya", "lastName": "Shapiro", "email": "maya.shapiro@company.com", "role": "manager", "photo": "https://i.pravatar.cc/40?img=5" },
+    { "id": "4", "firstName": "Tom", "lastName": "Katz", "email": "tom.katz@company.com", "role": "employee", "managerId": "1", "photo": "https://i.pravatar.cc/40?img=8" },
+    { "id": "5", "firstName": "Noa", "lastName": "Ben-David", "email": "noa.bendavid@company.com", "role": "employee", "managerId": "1", "photo": "https://i.pravatar.cc/40?img=44" },
+    { "id": "6", "firstName": "Avi", "lastName": "Mizrahi", "email": "avi.mizrahi@company.com", "role": "employee", "managerId": "1", "photo": "https://i.pravatar.cc/40?img=13" },
+    { "id": "7", "firstName": "Lior", "lastName": "Green", "email": "lior.green@company.com", "role": "employee", "managerId": "2", "photo": "https://i.pravatar.cc/40?img=15" },
+    { "id": "8", "firstName": "Dana", "lastName": "Friedman", "email": "dana.friedman@company.com", "role": "employee", "managerId": "2", "photo": "https://i.pravatar.cc/40?img=47" },
+    { "id": "9", "firstName": "Yael", "lastName": "Stern", "email": "yael.stern@company.com", "role": "employee", "managerId": "3", "photo": "https://i.pravatar.cc/40?img=36" },
+    { "id": "10", "firstName": "Ron", "lastName": "Avraham", "email": "ron.avraham@company.com", "role": "employee", "managerId": "3", "photo": "https://i.pravatar.cc/40?img=20" },
+    { "id": "11", "firstName": "Gal", "lastName": "Peretz", "email": "gal.peretz@company.com", "role": "employee", "managerId": "3", "photo": "https://i.pravatar.cc/40?img=25" }
   ]
 }

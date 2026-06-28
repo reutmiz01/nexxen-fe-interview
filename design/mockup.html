@@ -22,7 +22,6 @@
     --green:      #16A34A;
     --green-lt:   #F0FDF4;
     --shadow-sm:  0 1px 3px rgba(26,31,54,.08), 0 1px 2px rgba(26,31,54,.04);
-    --shadow-md:  0 4px 16px rgba(26,31,54,.12);
     --shadow-xl:  0 20px 48px rgba(26,31,54,.18);
     --r:          8px;
   }
@@ -35,14 +34,12 @@
     line-height: 1.5;
   }
 
-  /* ── NAV ── */
+  /* NAV */
   .nav {
     background: var(--navy);
     height: 56px;
-    display: flex;
-    align-items: center;
-    padding: 0 32px;
-    gap: 12px;
+    display: flex; align-items: center;
+    padding: 0 32px; gap: 12px;
     position: sticky; top: 0; z-index: 10;
   }
   .nav-logo {
@@ -54,29 +51,21 @@
   .nav-title { color: #fff; font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
   .nav-pill {
     margin-left: auto;
-    background: rgba(255,255,255,.1);
-    color: rgba(255,255,255,.7);
+    background: rgba(255,255,255,.1); color: rgba(255,255,255,.7);
     font-size: 11px; font-weight: 500;
     padding: 3px 10px; border-radius: 20px;
     letter-spacing: .04em; text-transform: uppercase;
   }
 
-  /* ── PAGE WRAPPER ── */
-  .page {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 32px 24px;
-  }
+  /* PAGE */
+  .page { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
 
-  /* ── SCREEN TOGGLE ── */
-  .screens-bar {
-    display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;
-  }
+  /* SCREEN TOGGLE */
+  .screens-bar { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
   .screen-btn {
     padding: 6px 14px; border-radius: 20px; border: 1.5px solid var(--border);
     background: var(--surface); color: var(--navy-60);
-    font-size: 12px; font-weight: 500; cursor: pointer;
-    transition: all .15s;
+    font-size: 12px; font-weight: 500; cursor: pointer; transition: all .15s;
   }
   .screen-btn:hover { border-color: var(--indigo); color: var(--indigo); }
   .screen-btn.active { background: var(--indigo); border-color: var(--indigo); color: #fff; }
@@ -85,29 +74,23 @@
     letter-spacing: .06em; align-self: center; padding: 0 4px;
   }
 
-  /* ── CARD ── */
+  /* CARD */
   .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--r);
-    box-shadow: var(--shadow-sm);
-    overflow: hidden;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--r); box-shadow: var(--shadow-sm); overflow: hidden;
   }
-
   .card-header {
-    padding: 20px 24px;
-    border-bottom: 1px solid var(--border);
+    padding: 20px 24px; border-bottom: 1px solid var(--border);
     display: flex; align-items: center; gap: 12px;
   }
   .card-header h2 { font-size: 16px; font-weight: 600; }
   .card-header .count {
     background: var(--indigo-lt); color: var(--indigo);
-    font-size: 12px; font-weight: 600;
-    padding: 2px 8px; border-radius: 12px;
+    font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 12px;
   }
   .card-header .spacer { flex: 1; }
 
-  /* ── BUTTON ── */
+  /* BUTTON */
   .btn {
     display: inline-flex; align-items: center; gap: 6px;
     padding: 7px 14px; border-radius: 6px; font-size: 13px; font-weight: 500;
@@ -115,105 +98,91 @@
   }
   .btn-primary { background: var(--indigo); color: #fff; }
   .btn-primary:hover { background: #2f4ac4; }
-  .btn-ghost {
-    background: transparent; color: var(--navy-60);
-    border: 1.5px solid var(--border);
-  }
+  .btn-ghost { background: transparent; color: var(--navy-60); border: 1.5px solid var(--border); }
   .btn-ghost:hover { border-color: var(--navy-60); color: var(--navy); }
   .btn-danger { background: var(--danger-lt); color: var(--danger); border: 1px solid #FECACA; }
   .btn-danger:hover { background: #FEE2E2; }
   .btn-sm { padding: 4px 10px; font-size: 12px; }
 
-  /* ── TABLE ── */
+  /* TABLE */
   .table-wrap { overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; }
   thead th {
-    padding: 10px 16px;
-    text-align: left; font-size: 11px; font-weight: 600;
+    padding: 10px 16px; text-align: left; font-size: 11px; font-weight: 600;
     color: var(--navy-60); text-transform: uppercase; letter-spacing: .06em;
-    background: var(--ground); border-bottom: 1px solid var(--border);
-    white-space: nowrap;
+    background: var(--ground); border-bottom: 1px solid var(--border); white-space: nowrap;
   }
-  tbody tr {
-    border-bottom: 1px solid var(--border);
-    transition: background .1s;
-  }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
   tbody tr:last-child { border-bottom: none; }
   tbody tr:hover { background: var(--ground); }
   tbody tr.manager-row { cursor: pointer; }
   tbody tr.manager-row:hover { background: var(--indigo-lt); }
-  tbody td {
-    padding: 12px 16px; font-size: 13px; vertical-align: middle;
-    font-variant-numeric: tabular-nums;
-  }
+  tbody td { padding: 10px 16px; font-size: 13px; vertical-align: middle; font-variant-numeric: tabular-nums; }
 
+  /* ROW AVATAR */
+  .name-cell { display: flex; align-items: center; gap: 10px; }
+  .row-avatar {
+    width: 34px; height: 34px; border-radius: 50%;
+    object-fit: cover; flex-shrink: 0;
+    border: 2px solid var(--border);
+  }
+  .row-avatar-fallback {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--indigo-mid); color: var(--indigo);
+    font-size: 12px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; border: 2px solid var(--border);
+  }
   .cell-name { font-weight: 600; color: var(--navy); }
   .cell-email { color: var(--navy-60); }
   .cell-id { color: var(--navy-30); font-size: 12px; font-family: monospace; }
 
-  /* ── ROLE BADGE ── */
+  /* BADGE */
   .badge {
     display: inline-flex; align-items: center; gap: 5px;
     padding: 3px 9px; border-radius: 12px; font-size: 12px; font-weight: 500;
   }
   .badge-manager { background: var(--indigo-lt); color: var(--indigo); }
   .badge-employee { background: var(--green-lt); color: var(--green); }
-  .badge-dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: currentColor; opacity: .7;
-  }
+  .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .7; }
 
-  /* ── MANAGER ROW INDICATOR ── */
+  /* MANAGER ROW INDICATOR */
   .manager-row td:first-child { position: relative; }
   .manager-row td:first-child::before {
-    content: '';
-    position: absolute; left: 0; top: 0; bottom: 0;
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
     width: 3px; background: var(--indigo); border-radius: 0 2px 2px 0;
   }
-
   .click-hint {
     display: inline-flex; align-items: center; gap: 4px;
     color: var(--indigo); font-size: 11px; font-weight: 500;
-    opacity: 0;
-    transition: opacity .15s;
+    opacity: 0; transition: opacity .15s; white-space: nowrap;
   }
   .manager-row:hover .click-hint { opacity: 1; }
-
   .actions-cell { display: flex; gap: 6px; }
 
-  /* ── SCREEN WRAPPER ── */
+  /* SCREEN */
   .screen { display: none; }
   .screen.active { display: block; }
 
-  /* ── MODAL ── */
-  .modal-scene {
-    position: relative;
-    margin-top: 24px;
-  }
+  /* MODAL */
+  .modal-scene { position: relative; margin-top: 24px; }
   .modal-backdrop {
     position: absolute; inset: -32px -24px;
-    background: rgba(26,31,54,.35);
-    backdrop-filter: blur(2px);
-    border-radius: var(--r);
-    z-index: 1;
+    background: rgba(26,31,54,.35); backdrop-filter: blur(2px);
+    border-radius: var(--r); z-index: 1;
   }
   .modal {
     position: relative; z-index: 2;
-    background: var(--surface);
-    border-radius: 12px;
-    box-shadow: var(--shadow-xl);
-    max-width: 520px;
-    margin: 32px auto;
-    overflow: hidden;
+    background: var(--surface); border-radius: 12px;
+    box-shadow: var(--shadow-xl); max-width: 520px;
+    margin: 32px auto; overflow: hidden;
   }
   .modal-header {
-    padding: 20px 24px 16px;
-    border-bottom: 1px solid var(--border);
+    padding: 20px 24px 16px; border-bottom: 1px solid var(--border);
     display: flex; align-items: flex-start; gap: 12px;
   }
   .modal-icon {
-    width: 36px; height: 36px; border-radius: 8px;
-    background: var(--indigo-lt);
+    width: 36px; height: 36px; border-radius: 8px; background: var(--indigo-lt);
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
   .modal-icon svg { width: 18px; height: 18px; stroke: var(--indigo); fill: none; stroke-width: 1.8; }
@@ -222,50 +191,40 @@
   .modal-close {
     margin-left: auto; width: 28px; height: 28px; border-radius: 6px;
     background: none; border: none; cursor: pointer; color: var(--navy-60);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0;
   }
   .modal-close:hover { background: var(--ground); }
   .modal-body { padding: 20px 24px; }
-  .modal-footer {
-    padding: 16px 24px; border-top: 1px solid var(--border);
-    display: flex; justify-content: flex-end; gap: 8px;
-  }
+  .modal-footer { padding: 16px 24px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 8px; }
 
-  /* team list */
+  /* TEAM LIST */
   .team-list { display: flex; flex-direction: column; gap: 8px; }
   .team-member {
     display: flex; align-items: center; gap: 12px;
     padding: 10px 12px; border-radius: 8px;
     border: 1px solid var(--border); background: var(--ground);
   }
-  .avatar {
-    width: 32px; height: 32px; border-radius: 50%;
-    background: var(--indigo-mid); color: var(--indigo);
-    font-size: 12px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
+  .team-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    object-fit: cover; flex-shrink: 0; border: 2px solid var(--border);
   }
   .member-name { font-size: 13px; font-weight: 600; }
   .member-email { font-size: 12px; color: var(--navy-60); }
 
-  /* ── FORM ── */
+  /* FORM */
   .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .form-group { display: flex; flex-direction: column; gap: 5px; }
   .form-group.full { grid-column: 1 / -1; }
   .form-label { font-size: 12px; font-weight: 600; color: var(--navy); letter-spacing: .01em; }
   .form-input, .form-select {
-    padding: 8px 12px;
-    border: 1.5px solid var(--border);
-    border-radius: 6px; font-size: 13px;
-    color: var(--navy); background: var(--surface);
-    outline: none; transition: border-color .15s;
-    width: 100%;
+    padding: 8px 12px; border: 1.5px solid var(--border);
+    border-radius: 6px; font-size: 13px; color: var(--navy); background: var(--surface);
+    outline: none; transition: border-color .15s; width: 100%;
   }
   .form-input:focus, .form-select:focus { border-color: var(--indigo); }
   .form-hint { font-size: 11px; color: var(--navy-30); }
 
-  /* ── EMPTY / ANNOTATION ── */
+  /* ANNOTATION */
   .annotation {
     display: flex; align-items: flex-start; gap: 8px;
     background: #FFFBEB; border: 1px solid #FDE68A;
@@ -273,12 +232,10 @@
     font-size: 12px; color: #92400E;
   }
   .annotation b { display: block; font-weight: 600; margin-bottom: 2px; }
-
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
   <div class="nav-logo">
     <svg viewBox="0 0 16 16"><path d="M8 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-5 9c0-2.2 2.2-4 5-4s5 1.8 5 4v1H3v-1z"/></svg>
@@ -288,8 +245,6 @@
 </nav>
 
 <div class="page">
-
-  <!-- SCREEN TOGGLE -->
   <div class="screens-bar">
     <span class="screen-label">Screens:</span>
     <button class="screen-btn active" onclick="showScreen('table')">1 — People Table</button>
@@ -297,9 +252,7 @@
     <button class="screen-btn" onclick="showScreen('form-modal')">3 — Add / Edit Person</button>
   </div>
 
-  <!-- ═══════════════════════════════════════════════════════
-       SCREEN 1 — PEOPLE TABLE
-  ═══════════════════════════════════════════════════════ -->
+  <!-- SCREEN 1 — PEOPLE TABLE -->
   <div id="screen-table" class="screen active">
     <div class="annotation">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" style="flex-shrink:0;margin-top:1px"><circle cx="8" cy="8" r="6"/><path d="M8 7v4M8 5.5v.5"/></svg>
@@ -307,8 +260,7 @@
     </div>
     <div class="card">
       <div class="card-header">
-        <h2>People</h2>
-        <span class="count">11</span>
+        <h2>People</h2><span class="count">11</span>
         <div class="spacer"></div>
         <button class="btn btn-primary">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 2v10M2 7h10"/></svg>
@@ -329,73 +281,80 @@
           <tbody>
             <tr class="manager-row" onclick="showScreen('team-modal')">
               <td><span class="cell-id">1</span></td>
-              <td><span class="cell-name">Sarah Cohen</span><span class="click-hint">↗ View team</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=10" alt=""/><span class="cell-name">Sarah Cohen</span><span class="click-hint">↗ View team</span></div></td>
               <td><span class="cell-email">sarah.cohen@company.com</span></td>
               <td><span class="badge badge-manager"><span class="badge-dot"></span>Manager</span></td>
-              <td><div class="actions-cell">
-                <button class="btn btn-ghost btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </div></td>
-            </tr>
-            <tr>
-              <td><span class="cell-id">4</span></td>
-              <td><span class="cell-name">Tom Katz</span></td>
-              <td><span class="cell-email">tom.katz@company.com</span></td>
-              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
-              <td><div class="actions-cell">
-                <button class="btn btn-ghost btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </div></td>
-            </tr>
-            <tr>
-              <td><span class="cell-id">5</span></td>
-              <td><span class="cell-name">Noa Ben-David</span></td>
-              <td><span class="cell-email">noa.bendavid@company.com</span></td>
-              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
-              <td><div class="actions-cell">
-                <button class="btn btn-ghost btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </div></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
             </tr>
             <tr class="manager-row">
               <td><span class="cell-id">2</span></td>
-              <td><span class="cell-name">David Levy</span><span class="click-hint">↗ View team</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=3" alt=""/><span class="cell-name">David Levy</span><span class="click-hint">↗ View team</span></div></td>
               <td><span class="cell-email">david.levy@company.com</span></td>
               <td><span class="badge badge-manager"><span class="badge-dot"></span>Manager</span></td>
-              <td><div class="actions-cell">
-                <button class="btn btn-ghost btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </div></td>
-            </tr>
-            <tr>
-              <td><span class="cell-id">7</span></td>
-              <td><span class="cell-name">Lior Green</span></td>
-              <td><span class="cell-email">lior.green@company.com</span></td>
-              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
-              <td><div class="actions-cell">
-                <button class="btn btn-ghost btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </div></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
             </tr>
             <tr class="manager-row">
               <td><span class="cell-id">3</span></td>
-              <td><span class="cell-name">Maya Shapiro</span><span class="click-hint">↗ View team</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=5" alt=""/><span class="cell-name">Maya Shapiro</span><span class="click-hint">↗ View team</span></div></td>
               <td><span class="cell-email">maya.shapiro@company.com</span></td>
               <td><span class="badge badge-manager"><span class="badge-dot"></span>Manager</span></td>
-              <td><div class="actions-cell">
-                <button class="btn btn-ghost btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </div></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
+            </tr>
+            <tr>
+              <td><span class="cell-id">4</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=8" alt=""/><span class="cell-name">Tom Katz</span></div></td>
+              <td><span class="cell-email">tom.katz@company.com</span></td>
+              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
+            </tr>
+            <tr>
+              <td><span class="cell-id">5</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=44" alt=""/><span class="cell-name">Noa Ben-David</span></div></td>
+              <td><span class="cell-email">noa.bendavid@company.com</span></td>
+              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
+            </tr>
+            <tr>
+              <td><span class="cell-id">6</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=13" alt=""/><span class="cell-name">Avi Mizrahi</span></div></td>
+              <td><span class="cell-email">avi.mizrahi@company.com</span></td>
+              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
+            </tr>
+            <tr>
+              <td><span class="cell-id">7</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=15" alt=""/><span class="cell-name">Lior Green</span></div></td>
+              <td><span class="cell-email">lior.green@company.com</span></td>
+              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
+            </tr>
+            <tr>
+              <td><span class="cell-id">8</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=47" alt=""/><span class="cell-name">Dana Friedman</span></div></td>
+              <td><span class="cell-email">dana.friedman@company.com</span></td>
+              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
             </tr>
             <tr>
               <td><span class="cell-id">9</span></td>
-              <td><span class="cell-name">Yael Stern</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=36" alt=""/><span class="cell-name">Yael Stern</span></div></td>
               <td><span class="cell-email">yael.stern@company.com</span></td>
               <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
-              <td><div class="actions-cell">
-                <button class="btn btn-ghost btn-sm">Edit</button>
-                <button class="btn btn-danger btn-sm">Delete</button>
-              </div></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
+            </tr>
+            <tr>
+              <td><span class="cell-id">10</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=20" alt=""/><span class="cell-name">Ron Avraham</span></div></td>
+              <td><span class="cell-email">ron.avraham@company.com</span></td>
+              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
+            </tr>
+            <tr>
+              <td><span class="cell-id">11</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=25" alt=""/><span class="cell-name">Gal Peretz</span></div></td>
+              <td><span class="cell-email">gal.peretz@company.com</span></td>
+              <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
+              <td><div class="actions-cell"><button class="btn btn-ghost btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></div></td>
             </tr>
           </tbody>
         </table>
@@ -403,9 +362,7 @@
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════════════════
-       SCREEN 2 — TEAM MODAL
-  ═══════════════════════════════════════════════════════ -->
+  <!-- SCREEN 2 — TEAM MODAL -->
   <div id="screen-team-modal" class="screen">
     <div class="card">
       <div class="card-header">
@@ -416,28 +373,20 @@
           Add Person
         </button>
       </div>
-      <div class="table-wrap">
+      <div class="table-wrap" style="opacity:.25;pointer-events:none">
         <table>
-          <thead>
-            <tr>
-              <th style="width:48px">ID</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Role</th>
-              <th style="width:120px">Actions</th>
-            </tr>
-          </thead>
-          <tbody style="opacity:.25;pointer-events:none">
+          <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Role</th><th>Actions</th></tr></thead>
+          <tbody>
             <tr class="manager-row">
               <td><span class="cell-id">1</span></td>
-              <td><span class="cell-name">Sarah Cohen</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=10" alt=""/><span class="cell-name">Sarah Cohen</span></div></td>
               <td><span class="cell-email">sarah.cohen@company.com</span></td>
               <td><span class="badge badge-manager"><span class="badge-dot"></span>Manager</span></td>
               <td></td>
             </tr>
             <tr>
               <td><span class="cell-id">4</span></td>
-              <td><span class="cell-name">Tom Katz</span></td>
+              <td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=8" alt=""/><span class="cell-name">Tom Katz</span></div></td>
               <td><span class="cell-email">tom.katz@company.com</span></td>
               <td><span class="badge badge-employee"><span class="badge-dot"></span>Employee</span></td>
               <td></td>
@@ -446,7 +395,6 @@
         </table>
       </div>
     </div>
-
     <div class="modal-scene">
       <div class="modal-backdrop"></div>
       <div class="modal">
@@ -463,15 +411,15 @@
         <div class="modal-body">
           <div class="team-list">
             <div class="team-member">
-              <div class="avatar">TK</div>
+              <img class="team-avatar" src="https://i.pravatar.cc/40?img=8" alt=""/>
               <div><div class="member-name">Tom Katz</div><div class="member-email">tom.katz@company.com</div></div>
             </div>
             <div class="team-member">
-              <div class="avatar">NB</div>
+              <img class="team-avatar" src="https://i.pravatar.cc/40?img=44" alt=""/>
               <div><div class="member-name">Noa Ben-David</div><div class="member-email">noa.bendavid@company.com</div></div>
             </div>
             <div class="team-member">
-              <div class="avatar">AM</div>
+              <img class="team-avatar" src="https://i.pravatar.cc/40?img=13" alt=""/>
               <div><div class="member-name">Avi Mizrahi</div><div class="member-email">avi.mizrahi@company.com</div></div>
             </div>
           </div>
@@ -483,9 +431,7 @@
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════════════════════
-       SCREEN 3 — ADD / EDIT FORM MODAL
-  ═══════════════════════════════════════════════════════ -->
+  <!-- SCREEN 3 — FORM MODAL -->
   <div id="screen-form-modal" class="screen">
     <div class="card">
       <div class="card-header">
@@ -498,18 +444,13 @@
       </div>
       <div class="table-wrap" style="opacity:.2;pointer-events:none">
         <table>
-          <thead>
-            <tr>
-              <th style="width:48px">ID</th><th>Name</th><th>Email</th><th>Role</th><th style="width:120px">Actions</th>
-            </tr>
-          </thead>
+          <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Role</th><th>Actions</th></tr></thead>
           <tbody>
-            <tr><td><span class="cell-id">1</span></td><td><span class="cell-name">Sarah Cohen</span></td><td></td><td></td><td></td></tr>
+            <tr><td><span class="cell-id">1</span></td><td><div class="name-cell"><img class="row-avatar" src="https://i.pravatar.cc/40?img=10" alt=""/><span class="cell-name">Sarah Cohen</span></div></td><td></td><td></td><td></td></tr>
           </tbody>
         </table>
       </div>
     </div>
-
     <div class="modal-scene">
       <div class="modal-backdrop"></div>
       <div class="modal">
@@ -539,10 +480,7 @@
             </div>
             <div class="form-group">
               <label class="form-label">Role</label>
-              <select class="form-select">
-                <option>employee</option>
-                <option>manager</option>
-              </select>
+              <select class="form-select"><option>employee</option><option>manager</option></select>
             </div>
             <div class="form-group">
               <label class="form-label">Manager</label>
@@ -564,7 +502,7 @@
     </div>
   </div>
 
-</div><!-- /page -->
+</div>
 
 <script>
   function showScreen(name) {
